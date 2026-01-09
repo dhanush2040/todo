@@ -146,11 +146,12 @@ const Dashboard = () => {
               <input
                 type="text"
                 placeholder="What do you need to do?"
+                style={{color:"white"}}
                 ref={todoInput}
                 onKeyDown={(e) => addTodoOnEnter(e)}
                 autoFocus
               />
-              <button onClick={addTodo}>Add</button>
+              <button onClick={addTodo} style={{color:"white"}}>Add</button>
             </div>
           </div>
           <div className="todo-list-container">

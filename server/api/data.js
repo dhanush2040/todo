@@ -32,7 +32,7 @@ router.put("/update", async (req, res) => {
      const { token, data } = req.body;
      try {
           await User.updateOne(
-               { username: token.username, useremail: token.useremail },
+               { useremail: token.useremail },
                {
                     $set: {
                          "todoList.activeTodo": data.activeTodo,
